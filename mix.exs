@@ -44,7 +44,8 @@ defmodule Rumbl.MixProject do
       {:jason, "~> 1.0"},
       {:plug_cowboy, "~> 2.0"},
       {:comeonin, "~> 4.1"},
-      {:pbkdf2_elixir, "~> 0.12"}
+      {:pbkdf2_elixir, "~> 0.12"},
+      {:credo, "~> 1.0.0", only: [:dev, :test], runtime: false}
     ]
   end
 
