@@ -4,7 +4,7 @@ defmodule RumblWeb.VideoController do
   alias Rumbl.Multimedia
   alias Rumbl.Multimedia.Video
 
-  plug :load_categories when action in [:new, :crate, :edit, :update]
+  plug :load_categories when action in [:new, :create, :edit, :update]
 
   def action(conn, _) do
     args = [conn, conn.params, conn.assigns.current_user]
